@@ -1,0 +1,211 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos generales */
+body{
+    background-color: #F08080;
+}
+
+h1{
+    color: blue;
+    text-align: center; text-transform: uppercase;
+    padding: 15px 20px 40px 30px;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: pink;
+}
+
+.textoDos{
+    color: pink;
+    background-color: brown;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* estilos generales propiedades padre*/
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.recuadro{
+    background-color: blueviolet;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* estilos generales footer */
+h5{
+    height: 100vh;
+    padding-left: 0px;
+    padding-top: 450px;
+    margin: 5px;
+}
+
+/* estilos generales index */
+h2{
+    color: blueviolet;
+    text-align: left; text-transform: uppercase;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* estilos header index */
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+/* estilos main index */
+.imagenPortada{
+    position: relative;
+    top: 50px;
+    left: 15px;
+}
+.texto1{
+    display: grid;
+    grid-template-columns: auto 40%;
+    margin-top: 230px;
+    color: blue;
+}
+.link{
+    display: grid;
+    grid-template-columns: auto 40%;
+    justify-self: right;
+    color: pink;
+    margin-top: 73px;
+    margin-right: 425px;
+}
+
+
+/* propiedades padre main index*/
+.grid{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    column-gap: 20px;
+}
+
+/* estilo main quienes-somos */
+.imagenUno{
+    position: absolute;
+    top: 400px;
+    right: 550px;
+    left: 550px;
+    display: grid;
+}
+.radio{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    display: grid;
+}
+.equipo{
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    display: grid;
+}
+.textoParrafo{
+    color: brown;
+    padding: 400px;
+    display: grid;
+    grid-column-start: auto;
+}
+/*propiedades padre quienes somos*/
+.picture{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* estilo main notas */
+.noticia{
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+/* estilo main programas */
+.video{
+    position: absolute;
+    top: 400px;
+    right: 550px;
+    left: 200px;
+}
+/* animacion de imagen */
+.girar{
+    display: flex;
+    margin-left: 900px;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes girar{
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+/* estilo contacto */
+.parrafo{
+    display: grid;
+    grid-template-columns: 30% auto;
+    justify-self: center;
+}
+span{
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+.chat{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+/*propiedades padre contacto*/
+.contact{
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto 60%;
+    justify-content: center;
+}
+
+/* mediaqueries */
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
+    .logo{
+        top: 20px;
+        right: 50px;
+    }
+    .grid{
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+    }
+    .picture{
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    
+    
+}
